@@ -4,15 +4,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/grey">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent">
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="112dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="25dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/back_arrow"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textStyle="bold"
+            android:textSize="38dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Sign up with one of the following options"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="25dp"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/google_btn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_custom"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="Google"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/apple_btn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_custom"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Apple"
+        android:textAllCaps="false"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="27dp"/>
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="359dp"
+        android:layout_height="45dp"
+        android:background="@drawable/text_field"
+        android:hint="E-mail"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="27dp"/>
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="359dp"
+        android:layout_height="45dp"
+        android:background="@drawable/text_field"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:text="Log in"
+        android:textAllCaps="false"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account ?"
+        android:textColor="@color/white"
+        android:layout_marginTop = "15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
