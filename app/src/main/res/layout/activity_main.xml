@@ -31,21 +31,24 @@
             android:src="@drawable/back_arrow"
             android:padding="5dp"
             android:layout_marginTop="5dp"
-            android:clickable="true"/>
+            android:clickable="true"
+            android:contentDescription="@string/back_arrow"
+            android:focusable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log in"
+            android:text="@string/Log_in"
             android:textStyle="bold"
-            android:textSize="38dp"
-            android:textColor="@color/white" />
+            android:textSize="38sp"
+            android:textColor="@color/white"
+            />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up with one of the following options"
+        android:text="@string/signUp_withOptions"
         android:textColor="@color/white"
         android:layout_marginHorizontal="25dp"/>
 
@@ -60,8 +63,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_custom"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="25dp"
-        android:text="Google"
+        android:layout_marginStart="25dp"
+        android:text="@string/name_Google"
         android:textAllCaps="false" />
 
     <Button
@@ -70,47 +73,47 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_custom"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:text="Apple"
+        android:layout_marginStart="20dp"
+        android:text="@string/name_Apple"
         android:textAllCaps="false"/>
 </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="E-mail"
+        android:text="@string/email"
         android:textColor="@color/white"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="27dp"/>
+        android:layout_marginStart="27dp"/>
 
     <EditText
         android:id="@+id/email_field"
         android:layout_width="359dp"
         android:layout_height="45dp"
         android:background="@drawable/text_field"
-        android:hint="E-mail"
+        android:hint="@string/email"
         android:textColorHint="@color/white"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textEmailAddress"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="@string/password"
         android:textColor="@color/white"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="27dp"/>
+        android:layout_marginStart="27dp"/>
 
     <EditText
         android:id="@+id/password_field"
         android:layout_width="359dp"
         android:layout_height="45dp"
         android:background="@drawable/text_field"
-        android:hint="Password"
+        android:hint="@string/password"
         android:textColorHint="@color/white"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textPassword" />
 
     <Button
@@ -119,8 +122,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/login_btn"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="25dp"
-        android:text="Log in"
+        android:layout_marginStart="25dp"
+        android:text="@string/Log_in"
         android:textAllCaps="false"/>
 
 <LinearLayout
@@ -132,17 +135,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have an account ?"
+        android:text="@string/question_forRegister"
         android:textColor="@color/white"
         android:layout_marginTop = "15dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="@string/signUp"
         android:textColor="@color/white"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:textStyle="bold"/>
 
 
