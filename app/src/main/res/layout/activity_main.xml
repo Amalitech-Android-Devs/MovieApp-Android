@@ -96,6 +96,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/text_field"
             android:hint="@string/email"
+            android:textColor="@color/white"
             android:inputType="textEmailAddress"
             android:textColorHint="@color/white" />
 
@@ -115,6 +116,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/text_field"
             android:hint="@string/password"
+            android:textColor="@color/white"
             android:inputType="textPassword"
             android:textColorHint="@color/white" />
 
