@@ -96,6 +96,7 @@
             android:background="@drawable/text_field2"
             android:hint="@string/name"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:layout_marginTop="5dp"
             android:layout_marginStart="25dp"
             android:inputType="textEmailAddress"/>
@@ -115,6 +116,7 @@
             android:background="@drawable/text_field2"
             android:hint="@string/email1"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:layout_marginTop="5dp"
             android:layout_marginStart="25dp"
             android:inputType="textEmailAddress"/>
@@ -134,6 +136,7 @@
             android:background="@drawable/text_field2"
             android:hint="@string/password1"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:layout_marginTop="5dp"
             android:layout_marginStart="25dp"
             android:inputType="textPassword"/>
