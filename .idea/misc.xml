@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/drawable/actors_images.xml" value="0.2203125" />
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/drawable/back_arrow.xml" value="0.2203125" />
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/drawable/back_button.xml" value="0.2203125" />
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/drawable/button_custom.xml" value="0.2203125" />
@@ -10,7 +11,7 @@
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/drawable/login_btn.xml" value="0.2203125" />
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/drawable/text_field.xml" value="0.2203125" />
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/drawable/text_field2.xml" value="0.2203125" />
-        <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/layout/activity_description.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/layout/activity_description.xml" value="0.2" />
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ReginaldTorkonoo/AndroidStudioProjects/MovieApp-Android/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
       </map>
