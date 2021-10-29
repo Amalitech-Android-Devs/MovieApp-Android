@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MovieApp</string>
-    <string name ="back_arrow"></string>
     <string name = "Log_in">Log in</string>
     <string name = "signUp_withOptions">Sign up with the following options</string>
     <string name = "name_Google">Google</string>
@@ -9,4 +8,22 @@
     <string name = "password">Password</string>
     <string name = "question_forRegister">Don\'t have an account ?</string>
     <string name = "signUp">Sign up</string>
+    <string name ="image_description">Movie image of Godzilla vs Kong</string>
+    <string name="godzilla_vs_kong">Godzilla vs Kong</string>
+    <string name="_2021_action_adventure_2h_35min">2021 - Action, Adventure - 2h 35min</string>
+    <string name="_7_2">7.2</string>
+    <string name="godzilla_vs_kong_is_a_2021_american_monster_film_directed_by_adam_wingard_in_the_film_kong_clashes_with_godzilla_as_humans_lure_the_ape_into_the_hollow_earth_to_retrieve_a_power_source_for_a_secret_weapon_to_stop_godzilla_s_mysterious_rampages">Godzilla vs. Kong is a 2021 American monster film directed by Adam Wingard. ... In the film, Kong clashes with Godzilla as humans lure the ape into the Hollow Earth to retrieve a power source for a secret weapon to stop Godzilla\'s mysterious rampages.</string>
+    <string name="cast">Cast</string>
+    <string name="andrew_skarsgard">Andrew Skarsgard</string>
+    <string name="billie_brown">Billie Brown</string>
+    <string name="rebecca_hall">Rebecca Hall</string>
+    <string name="julian_denisson">Julian Denisson</string>
+    <string name="brian_henry">Brian Henry</string>
+    <string name="dr_nathan_lind">Dr Nathan Lind</string>
+    <string name="madison_russell">Madison Russell</string>
+    <string name="dr_iilene_andrews">Dr. IIlene Andrews</string>
+    <string name="josh_valentine">Josh Valentine</string>
+    <string name="bernie_hayes">Bernie Hayes</string>
+    <string name="back_arrow">back_arrow</string>
+    <string name="trailers">Trailers</string>
 </resources>

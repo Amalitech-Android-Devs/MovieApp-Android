@@ -10,4 +10,7 @@
     <color name = "grey">#272221</color>
     <color name = "light_grey">#AAA6A6</color>
     <color name = "red">#CA2A2A</color>
+
+    <color name = "yellow">#E6CB20</color>
+    <color name="light_greyS">#D1D1D1</color>
 </resources>
