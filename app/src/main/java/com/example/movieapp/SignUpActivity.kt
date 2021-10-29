@@ -8,15 +8,12 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import com.example.movieapp.databinding.ActivityMainBinding
+import com.example.movieapp.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
-
-class MainActivity : AppCompatActivity() {
-
-    // View binding
-    private lateinit var binding: ActivityMainBinding
-
+class SignUpActivity : AppCompatActivity() {
+    //ViewBinding
+    private lateinit var binding: ActivitySignUpBinding
 
     // ProgressDialog
     private lateinit var progressDialog: ProgressDialog
@@ -29,39 +26,31 @@ class MainActivity : AppCompatActivity() {
     private var password = ""
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
-        //configure progress dialog
+        // Configure progress dialog
         progressDialog = ProgressDialog(this)
-        progressDialog.setTitle("Please wait ")
-        progressDialog.setMessage("logging In...")
+        progressDialog.setTitle("Please wait")
+        progressDialog.setMessage("Creating account...")
         progressDialog.setCanceledOnTouchOutside(false)
 
         //init fireBaseAuth
         fireBAseAuth = FirebaseAuth.getInstance()
-        checkUser()
 
-        // handle click, open register activity
-        binding.noAccount.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity::class.java))
-        }
+        // handle click, begin SignUp
 
-
-        // handle click, begin login
-        binding.loginBtn.setOnClickListener {
-            // before logging in, validate data
+        binding.SignBtn.setOnClickListener {
+            //validate data
             validateData()
         }
-
     }
-
     private fun validateData() {
         //get Data
+
         email = binding.emailField.text.toString().trim()
         password = binding.passwordField.text.toString().trim()
 
@@ -73,46 +62,44 @@ class MainActivity : AppCompatActivity() {
         else if(TextUtils.isEmpty(password)){
             //password empty
             binding.passwordField.error = "Please enter password"
-        }else{
+        }else if(password.length < 6){
+            //password length is less than 6
+            binding.passwordField.error = "Password must be atleast 6 characters long"
+
+        }
+        else{
             //data is validated
-            fireBaseLogin()
+            fireBaseSignUp()
         }
     }
 
-    private fun fireBaseLogin() {
-        // show progress
+    private fun fireBaseSignUp() {
+        //show progress
         progressDialog.show()
-        fireBAseAuth.signInWithEmailAndPassword(email,password)
+
+        // create account
+        fireBAseAuth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener {
-                //login success
+                //signup success
                 progressDialog.dismiss()
 
-                //get user info
+                //get current user
                 val fireBaseUser = fireBAseAuth.currentUser
                 val email = fireBaseUser!!.email
-                Toast.makeText(this,"logged-In as $email", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Account created Successfully with email $email", Toast.LENGTH_SHORT).show()
 
-                   //open profile
-              //  startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
-
             }
-            .addOnFailureListener { e->
-                // login failed
+            .addOnFailureListener {  e->
+                //signup failed
                 progressDialog.dismiss()
-                Toast.makeText(this,"login failed due to${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "SignUp Failed due to ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 
-    private fun checkUser() {
-        //if user is already logged in, goto profile activity
-        //get current user
-        val fireBaseUser = fireBAseAuth.currentUser
-        if(fireBaseUser != null){
-              //user is already logged in
-         //   startActivity(Intent(this, ProfileActivity::class.java))
-            finish()
-        }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed() //go back to provide activity, when back button of actionBar clicked
+        return super.onSupportNavigateUp()
     }
-
 }
