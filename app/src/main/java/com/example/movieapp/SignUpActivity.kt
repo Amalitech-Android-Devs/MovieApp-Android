@@ -19,7 +19,7 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
 
     // FireBaseAuth
-    private lateinit var fireBAseAuth: FirebaseAuth
+    private lateinit var fireBaseAuth: FirebaseAuth
 
     // global values
     private var email = ""
@@ -39,7 +39,7 @@ class SignUpActivity : AppCompatActivity() {
         progressDialog.setCanceledOnTouchOutside(false)
 
         //init fireBaseAuth
-        fireBAseAuth = FirebaseAuth.getInstance()
+        fireBaseAuth = FirebaseAuth.getInstance()
 
         // handle click, begin SignUp
 
@@ -78,13 +78,13 @@ class SignUpActivity : AppCompatActivity() {
         progressDialog.show()
 
         // create account
-        fireBAseAuth.createUserWithEmailAndPassword(email, password)
+        fireBaseAuth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener {
                 //signup success
                 progressDialog.dismiss()
 
                 //get current user
-                val fireBaseUser = fireBAseAuth.currentUser
+                val fireBaseUser = fireBaseAuth.currentUser
                 val email = fireBaseUser!!.email
                 Toast.makeText(this, "Account created Successfully with email $email", Toast.LENGTH_SHORT).show()
 

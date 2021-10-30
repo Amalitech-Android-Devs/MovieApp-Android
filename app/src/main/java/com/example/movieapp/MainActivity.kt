@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
 
     // FireBaseAuth
-    private lateinit var fireBAseAuth: FirebaseAuth
+    private lateinit var fireBaseAuth: FirebaseAuth
 
     // global values
     private var email = ""
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         progressDialog.setCanceledOnTouchOutside(false)
 
         //init fireBaseAuth
-        fireBAseAuth = FirebaseAuth.getInstance()
+        fireBaseAuth = FirebaseAuth.getInstance()
         checkUser()
 
         // handle click, open register activity
@@ -82,18 +82,18 @@ class MainActivity : AppCompatActivity() {
     private fun fireBaseLogin() {
         // show progress
         progressDialog.show()
-        fireBAseAuth.signInWithEmailAndPassword(email,password)
+        fireBaseAuth.signInWithEmailAndPassword(email,password)
             .addOnSuccessListener {
                 //login success
                 progressDialog.dismiss()
 
                 //get user info
-                val fireBaseUser = fireBAseAuth.currentUser
+                val fireBaseUser = fireBaseAuth.currentUser
                 val email = fireBaseUser!!.email
                 Toast.makeText(this,"logged-In as $email", Toast.LENGTH_SHORT).show()
 
                    //open profile
-              //  startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, DescriptionActivity::class.java))
                 finish()
 
             }
@@ -107,10 +107,10 @@ class MainActivity : AppCompatActivity() {
     private fun checkUser() {
         //if user is already logged in, goto profile activity
         //get current user
-        val fireBaseUser = fireBAseAuth.currentUser
+        val fireBaseUser = fireBaseAuth.currentUser
         if(fireBaseUser != null){
               //user is already logged in
-         //   startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, DescriptionActivity::class.java))
             finish()
         }
     }
