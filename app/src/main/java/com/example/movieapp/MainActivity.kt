@@ -9,6 +9,7 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.movieapp.databinding.ActivityMainBinding
+import com.example.swipeview.SwipeView
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -110,7 +111,7 @@ class MainActivity : AppCompatActivity() {
         val fireBaseUser = fireBaseAuth.currentUser
         if(fireBaseUser != null){
               //user is already logged in
-            startActivity(Intent(this, DescriptionActivity::class.java))
+            startActivity(Intent(this, SwipeView::class.java))
             finish()
         }
     }
