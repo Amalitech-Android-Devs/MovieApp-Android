@@ -16,6 +16,8 @@
             android:exported="true" />
         <activity android:name="com.example.swipeview.SwipeView"
             android:exported="true"/>
+        <activity android:name=".DescriptionActivity"
+            android:exported="true"/>
 
         <activity
             android:name=".MainActivity"

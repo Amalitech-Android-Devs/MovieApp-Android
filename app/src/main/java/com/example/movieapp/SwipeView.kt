@@ -6,8 +6,8 @@ import androidx.appcompat.app.ActionBar
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.example.movieapp.R
+import com.example.movieapp.SwipeVIewAdapter
 import kotlinx.android.synthetic.main.activity_swip_view.*
-import java.text.FieldPosition
 
 
 class SwipeView : AppCompatActivity() {

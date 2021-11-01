@@ -1,4 +1,4 @@
-package com.example.swipeview
+package com.example.movieapp
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.viewbinding.ViewBinding
 import androidx.viewpager.widget.PagerAdapter
+import com.example.swipeview.ModelCardViewItem
 import kotlinx.android.synthetic.main.view_item.view.*
 
 class SwipeVIewAdapter(
