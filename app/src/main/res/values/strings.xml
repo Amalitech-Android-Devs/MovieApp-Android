@@ -26,4 +26,14 @@
     <string name="bernie_hayes">Bernie Hayes</string>
     <string name="back_arrow">back_arrow</string>
     <string name="trailers">Trailers</string>
+
+    <!--swipe view strings-->
+    <string name="popular_movies">Popular Movies</string>
+    <string name="tv_shows">TV shows</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="movies">Mov</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="card_view">card view</string>
+
 </resources>

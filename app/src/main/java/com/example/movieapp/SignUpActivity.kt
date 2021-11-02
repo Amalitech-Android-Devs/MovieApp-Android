@@ -42,15 +42,14 @@ class SignUpActivity : AppCompatActivity() {
         fireBaseAuth = FirebaseAuth.getInstance()
 
         // handle click, begin SignUp
-
         binding.SignBtn.setOnClickListener {
             //validate data
             validateData()
         }
     }
     private fun validateData() {
-        //get Data
 
+        //get Data
         email = binding.emailField.text.toString().trim()
         password = binding.passwordField.text.toString().trim()
 

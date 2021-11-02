@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"logged-In as $email", Toast.LENGTH_SHORT).show()
 
                    //open profile
-                startActivity(Intent(this, DescriptionActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
 
             }
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
         val fireBaseUser = fireBaseAuth.currentUser
         if(fireBaseUser != null){
               //user is already logged in
-            startActivity(Intent(this, DescriptionActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }
