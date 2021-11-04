@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApp">
         <activity
-            android:name=".SearchActitvity"
+            android:name=".SearchActivity"
             android:exported="true" />
         <activity
             android:name=".SignUpActivity"
