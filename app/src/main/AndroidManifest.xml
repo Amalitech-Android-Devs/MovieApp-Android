@@ -12,11 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApp">
         <activity
+            android:name=".SearchActitvity"
+            android:exported="true" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="true" />
-        <activity android:name="com.example.swipeview.SwipeView"
-            android:exported="true"/>
-
+        <activity
+            android:name="com.example.swipeview.SwipeView"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
