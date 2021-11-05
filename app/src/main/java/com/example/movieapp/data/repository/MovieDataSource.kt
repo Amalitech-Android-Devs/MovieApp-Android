@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.PageKeyedDataSource
 import com.example.movieapp.data.api.FIRST_PAGE
-import com.movieapp.android.data.api.TheMovieDBInterface
+import com.example.movieapp.data.api.TheMovieDBInterface
 import com.movieapp.android.data.model.Movie
 import com.movieapp.android.data.repository.NetworkState
 import io.reactivex.disposables.CompositeDisposable

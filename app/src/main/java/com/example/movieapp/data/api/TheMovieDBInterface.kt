@@ -1,4 +1,4 @@
-package com.movieapp.android.data.api
+package com.example.movieapp.data.api
 
 import com.movieapp.android.data.model.MovieDetails
 import com.movieapp.android.data.model.MovieResponse

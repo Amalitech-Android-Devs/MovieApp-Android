@@ -3,7 +3,7 @@ package com.movieapp.android.data.repository
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.movieapp.android.data.api.TheMovieDBInterface
+import com.example.movieapp.data.api.TheMovieDBInterface
 import com.movieapp.android.data.model.MovieDetails
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

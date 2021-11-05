@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import com.example.movieapp.R
 import com.example.movieapp.data.api.POSTER_BASE_URL
 import com.example.movieapp.data.api.TheMovieDBClient
-import com.movieapp.android.data.api.TheMovieDBInterface
+import com.example.movieapp.data.api.TheMovieDBInterface
 import com.movieapp.android.data.repository.NetworkState
 import com.movieapp.android.data.model.MovieDetails
 import com.movieapp.android.ui.single_movie_details.MovieDetailsRepository

@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.movieapp.R
 import com.example.movieapp.data.api.TheMovieDBClient
-import com.movieapp.android.data.api.TheMovieDBInterface
+import com.example.movieapp.data.api.TheMovieDBInterface
 import com.movieapp.android.data.repository.NetworkState
 import com.movieapp.android.ui.popular_movie.MainActivityViewModel
 import com.movieapp.android.ui.popular_movie.MoviePagedListRepository

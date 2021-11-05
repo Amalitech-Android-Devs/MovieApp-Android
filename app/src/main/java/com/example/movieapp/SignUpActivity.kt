@@ -46,7 +46,16 @@ class SignUpActivity : AppCompatActivity() {
             //validate data
             validateData()
         }
+
+
+        binding.alreadyHaveAcc.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+        binding.backBtn.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
+
     private fun validateData() {
 
         //get Data

@@ -1,7 +1,7 @@
 package com.movieapp.android.ui.single_movie_details
 
 import androidx.lifecycle.LiveData
-import com.movieapp.android.data.api.TheMovieDBInterface
+import com.example.movieapp.data.api.TheMovieDBInterface
 import com.movieapp.android.data.repository.MovieDetailsNetworkDataSource
 import com.movieapp.android.data.repository.NetworkState
 import com.movieapp.android.data.model.MovieDetails

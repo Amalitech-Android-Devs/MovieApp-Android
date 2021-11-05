@@ -50,5 +50,8 @@
     <string name="revenue">Revenue:</string>
     <string name="overview">Overview</string>
     <string name="overview_m">overview .........</string>
+    <string name="log_in">Log In</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="create_an_account">Create an account</string>
 
 </resources>

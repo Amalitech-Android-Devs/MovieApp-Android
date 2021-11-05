@@ -1,6 +1,5 @@
 package com.example.movieapp.data.api
 
-import com.movieapp.android.data.api.TheMovieDBInterface
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

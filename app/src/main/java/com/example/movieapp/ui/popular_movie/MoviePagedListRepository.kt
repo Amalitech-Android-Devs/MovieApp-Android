@@ -5,7 +5,7 @@ import androidx.lifecycle.Transformations
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import com.example.movieapp.data.api.POST_PER_PAGE
-import com.movieapp.android.data.api.TheMovieDBInterface
+import com.example.movieapp.data.api.TheMovieDBInterface
 import com.example.movieapp.data.repository.MovieDataSource
 import com.movieapp.android.data.repository.MovieDataSourceFactory
 import com.movieapp.android.data.repository.NetworkState
