@@ -9,6 +9,7 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.movieapp.databinding.ActivityMainBinding
+import com.example.swipeview.SwipeView
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -93,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"logged-In as $email", Toast.LENGTH_SHORT).show()
 
                    //open profile
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, SwipeView::class.java))
                 finish()
 
             }
