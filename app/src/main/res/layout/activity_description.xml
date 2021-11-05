@@ -35,15 +35,15 @@
             android:contentDescription="@string/back_arrow"/>
 
         <TextView
-            android:id="@+id/year_make"
+            android:id="@+id/content_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120dp"
+            android:layout_marginVertical="265dp"
             android:text="@string/godzilla_vs_kong"
             android:textColor="@color/white"
             android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginVertical="265dp"
-            android:layout_marginHorizontal="120dp"/>
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <LinearLayout
@@ -54,6 +54,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:orientation="vertical">
+
 
         <TextView
             android:id="@+id/genre"
@@ -81,11 +82,12 @@
 
             <RatingBar
                 android:id="@+id/rating_bar"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="?android:attr/ratingBarStyleSmall"
                 android:isIndicator="true"
-                android:rating="4"
+                android:rating="8"
+                android:numStars="10"
                 android:stepSize="1"
                 android:theme="@style/RatingBar"
                 android:layout_marginStart="10dp"

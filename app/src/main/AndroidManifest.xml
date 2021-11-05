@@ -20,6 +20,10 @@
         <activity
             android:name="com.example.swipeview.SwipeView"
             android:exported="true" />
+        <activity android:name=".ui.popular_movie.PopularMovieActivity"
+            android:exported="true"/>
+        <activity android:name=".ui.single_movie_details.SingleMovie"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
