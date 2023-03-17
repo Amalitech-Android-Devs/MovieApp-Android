@@ -1,2 +1,2 @@
 # MovieApp-Android
-//Utilizing MVVM Software Architecture and API Integration
+Utilizing MVVM Software Architecture and API Integration
